@@ -18,6 +18,8 @@
     },
     "scripts": {
         "prepare": "husky install",
-        "lint": "solhint contracts/**/*.sol && eslint --ext .js,.ts ."
+        "lint": "solhint **/*.sol && eslint --ext .js,.ts .",
+        "lint:fix": "solhint --fix **/*.sol && eslint --ext .js,.ts . --fix",
+        "format": "prettier --write ."
     }
 }
