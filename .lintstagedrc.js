@@ -1,4 +1,4 @@
-import path from "path";
+const path = require("path");
 
 const buildSolhintCommand = (filenames) =>
     `solhint --fix ${filenames
@@ -15,7 +15,7 @@ const buildPrettierCommand = (filenames) =>
         .map((f) => path.relative(process.cwd(), f))
         .join(" ")}`;
 
-export default {
+module.exports = {
     "*.sol": [buildSolhintCommand, buildPrettierCommand],
     "*.ts": [buildEslintCommand, buildPrettierCommand],
 };

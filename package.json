@@ -1,6 +1,5 @@
 {
     "name": "hardhat-typescript-linted-template",
-    "type": "module",
     "devDependencies": {
         "@nomicfoundation/hardhat-toolbox": "^2.0.0",
         "@types/node": "^18.11.9",
