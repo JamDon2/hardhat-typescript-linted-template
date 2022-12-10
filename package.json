@@ -2,12 +2,15 @@
     "name": "hardhat-typescript-linted-template",
     "devDependencies": {
         "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+        "@nomiclabs/hardhat-etherscan": "^3.1.3",
         "@types/node": "^18.11.9",
         "@typescript-eslint/eslint-plugin": "^5.44.0",
         "@typescript-eslint/parser": "^5.44.0",
+        "dotenv": "^16.0.3",
         "eslint-config-prettier": "^8.5.0",
         "eslint-ts": "npm:eslint@^8.28.0",
         "hardhat": "^2.12.2",
+        "hardhat-deploy": "^0.11.22",
         "husky": "^8.0.0",
         "lint-staged": "^13.0.4",
         "prettier": "^2.8.0",
@@ -21,10 +24,5 @@
         "lint": "solhint **/*.sol && eslint --ext .js,.ts .",
         "lint:fix": "solhint --fix **/*.sol && eslint --ext .js,.ts . --fix",
         "format": "prettier --write ."
-    },
-    "dependencies": {
-        "@nomiclabs/hardhat-etherscan": "^3.1.3",
-        "dotenv": "^16.0.3",
-        "hardhat-deploy": "^0.11.22"
     }
 }
